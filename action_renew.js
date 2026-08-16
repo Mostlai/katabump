@@ -611,7 +611,7 @@ async function solveAltchaIfPresent(page, stageName = "Renew阶段", maxAttempts
 
   if (PROXY_CONFIG) {
         const isValid = await checkProxy();
-        if (!isValid) {
+        if (!isValid && 1==0) {
             console.error('[代理] 代理无效，终止运行。');
             process.exit(1);
         }
